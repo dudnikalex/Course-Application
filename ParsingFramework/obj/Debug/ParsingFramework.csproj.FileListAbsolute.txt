@@ -1,0 +1,4 @@
+C:\Users\Max\source\repos\Course\CourseApp\ParsingFramework\bin\Debug\ParsingFramework.dll
+C:\Users\Max\source\repos\Course\CourseApp\ParsingFramework\bin\Debug\ParsingFramework.pdb
+C:\Users\Max\source\repos\Course\CourseApp\ParsingFramework\obj\Debug\ParsingFramework.dll
+C:\Users\Max\source\repos\Course\CourseApp\ParsingFramework\obj\Debug\ParsingFramework.pdb

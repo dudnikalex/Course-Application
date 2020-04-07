@@ -1,0 +1,5 @@
+https://www.userbenchmark.com/resources/download/csv/CPU_UserBenchmarks.csv
+https://www.userbenchmark.com/resources/download/csv/GPU_UserBenchmarks.csv
+https://www.userbenchmark.com/resources/download/csv/SSD_UserBenchmarks.csv
+https://www.userbenchmark.com/resources/download/csv/HDD_UserBenchmarks.csv
+https://www.userbenchmark.com/resources/download/csv/RAM_UserBenchmarks.csv

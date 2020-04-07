@@ -1,0 +1,11 @@
+C:\Users\Max\source\repos\Course\CourseApp\UserbenchmarkParser\bin\Debug\UserbenchmarkParser.exe.config
+C:\Users\Max\source\repos\Course\CourseApp\UserbenchmarkParser\bin\Debug\UserbenchmarkParser.exe
+C:\Users\Max\source\repos\Course\CourseApp\UserbenchmarkParser\bin\Debug\UserbenchmarkParser.pdb
+C:\Users\Max\source\repos\Course\CourseApp\UserbenchmarkParser\bin\Debug\ClassLibrary.dll
+C:\Users\Max\source\repos\Course\CourseApp\UserbenchmarkParser\bin\Debug\ParsingFramework.dll
+C:\Users\Max\source\repos\Course\CourseApp\UserbenchmarkParser\bin\Debug\ParsingFramework.pdb
+C:\Users\Max\source\repos\Course\CourseApp\UserbenchmarkParser\bin\Debug\ClassLibrary.pdb
+C:\Users\Max\source\repos\Course\CourseApp\UserbenchmarkParser\obj\Debug\UserbenchmarkParser.csprojAssemblyReference.cache
+C:\Users\Max\source\repos\Course\CourseApp\UserbenchmarkParser\obj\Debug\UserbenchmarkParser.csproj.CopyComplete
+C:\Users\Max\source\repos\Course\CourseApp\UserbenchmarkParser\obj\Debug\UserbenchmarkParser.exe
+C:\Users\Max\source\repos\Course\CourseApp\UserbenchmarkParser\obj\Debug\UserbenchmarkParser.pdb
