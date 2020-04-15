@@ -11,8 +11,10 @@ namespace WebApp.Models
         public string name { get; set; }
         
         public string set { get; set; }
-        public int cpu_rate { get; set; }
-        public int gpu_rate { get; set; }
-        public int ram_rate { get; set; }
+        public Single cpu_rate { get; set; }
+        public Single gpu_rate { get; set; }
+        public Single ram_rate { get; set; }
+        public Single hdd_rate { get; set; }
+        public Single ssd_rate { get; set; }
     }
 }

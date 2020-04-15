@@ -13,14 +13,14 @@ namespace UserbenchmarkParser
         private const int numOfUrls = 5;
         static void Main(string[] args)
         {
-            BenchParser handler = new BenchParser();
+            
             string[] names = { "cpu", "gpu", "ssd", "hdd", "ram" };
 
             string[] urls = File.ReadAllLines(@"../../Sourse/urls.txt");
 
             for (int i = 0; i < numOfUrls; i++)
             {
-                handler.Download(urls[i], names[i]);
+                BenchParser.Download(urls[i], names[i]);
             }
             
 

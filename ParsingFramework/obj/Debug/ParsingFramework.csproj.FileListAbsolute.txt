@@ -2,3 +2,9 @@ C:\Users\Max\source\repos\Course\CourseApp\ParsingFramework\bin\Debug\ParsingFra
 C:\Users\Max\source\repos\Course\CourseApp\ParsingFramework\bin\Debug\ParsingFramework.pdb
 C:\Users\Max\source\repos\Course\CourseApp\ParsingFramework\obj\Debug\ParsingFramework.dll
 C:\Users\Max\source\repos\Course\CourseApp\ParsingFramework\obj\Debug\ParsingFramework.pdb
+C:\Users\Max\Documents\GitHub\Course-Application\ParsingFramework\bin\Debug\ParsingFramework.dll
+C:\Users\Max\Documents\GitHub\Course-Application\ParsingFramework\bin\Debug\ParsingFramework.pdb
+C:\Users\Max\Documents\GitHub\Course-Application\ParsingFramework\obj\Debug\ParsingFramework.csprojAssemblyReference.cache
+C:\Users\Max\Documents\GitHub\Course-Application\ParsingFramework\obj\Debug\ParsingFramework.csproj.CoreCompileInputs.cache
+C:\Users\Max\Documents\GitHub\Course-Application\ParsingFramework\obj\Debug\ParsingFramework.dll
+C:\Users\Max\Documents\GitHub\Course-Application\ParsingFramework\obj\Debug\ParsingFramework.pdb

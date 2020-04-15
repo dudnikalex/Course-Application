@@ -10,7 +10,7 @@
                 document.getElementById("here").scrollIntoView({ block: "center", behavior: "smooth" });
             });
         }
-       </script>
+    </script>
     <style>
         * {
             box-sizing: border-box;
@@ -161,127 +161,131 @@
         <button type="button" class="btn">Go to selector    </button>
     </div>
     
-    <div id="here" class="claas1">
-        <div class="grid-container">
-            <div class="header">
-                <h2>Choose which applications you want to use</h2>
-            </div>
-
-            <div class="left" style="background-color:#aaa;">
-                <form action="/action_page.php">
-                    <div align="center">
-                        <div>
-                            <label for="fname">CS:GO</label>
-                        </div>
-                        <select id="country" name="country">
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
-                        </select>
-                    </div>
-                    <div align="center">
-                        <div>
-                            <label for="lname">Battlefield 5</label>
-                        </div>
-                        <select id="country" name="country">
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
-                        </select>
-                    </div>
-                    <div  align="center">
-                        <div>
-                            <label for="country">Witcher 3</label>
-                        </div>
-                        <select id="country" name="country">
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
-                        </select>
-                    </div>
-                    
-
-                </form>
-            </div>
-            <div class="middle" style="background-color:#bbb;">
-                <form action="/action_page.php">
-                    <div align="center">
-                        <div>
-                            <label for="fname">CS:GO</label>
-                        </div>
-                        <select id="country" name="country">
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
-                        </select>
-                    </div>
-                    <div align="center">
-                        <div>
-                            <label for="lname">Battlefield 5</label>
-                        </div>
-                        <select id="country" name="country">
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
-                        </select>
-                    </div>
-                    <div align="center">
-                        <div>
-                            <label for="country">Witcher 3</label>
-                        </div>
-                        <select id="country" name="country">
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
-                        </select>
-                    </div>
-                    
-                </form>
-            </div>  
-            <div class="right" style="background-color:#ccc;">
-                <form action="/action_page.php">
-                    <div align="center">
-                        <div>
-                            <label for="fname">CS:GO</label>
-                        </div>
-                        <select id="country" name="country">
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
-                        </select>
-                    </div>
-                    <div align="center">
-                        <div>
-                            <label for="lname">Battlefield 5</label>
-                        </div>
-                        <select id="country" name="country">
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
-                        </select>
-                    </div>
-                    <div align="center">
-                        <div>
-                            <label for="country">Witcher 3</label>
-                        </div>
-                        <select id="country" name="country">
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
-                        </select>
-                    </div>
-                    
-                </form>
-            </div>
-  
-            <div class="footer">
-                <div align="center">
-                    <input type="submit" value="Submit">
+    <form action="/Home/About" method="post">
+        <div id="here" class="claas1">
+            <div class="grid-container">
+                <div class="header">
+                    <h2>Choose which applications you want to use</h2>
                 </div>
-                
-            </div>
 
+                <div class="left" style="background-color:#aaa;">
+                    <div align="center">
+                        <div>
+                            <label for="fname">World of Warcraft</label>
+                        </div>
+                        <select id="WOW" name="WOW">
+                            <option value="noneed">Do not need</option>
+                            <option value="hg2160">High graphics, 2160p</option>
+                            <option value="hg1080">High graphics, 1080p</option>
+                            <option value="lg2160">Low graphics, 2160p</option>
+                            <option value="lg1080">Low graphics, 1080p</option>
+                        </select>
+                    </div>
+                    <div align="center">
+                        <div>
+                            <label for="lname">Adobe Photoshop</label>
+                        </div>
+                        <select id="ps" name="ps">
+                            <option value="noneed">Do not need</option>
+                            <option value="mp">Minimum performance</option>
+                            <option value="rp">Recommended performance</option>
+                        </select>
+                    </div>
+                    <div align="center">
+                        <div>
+                            <label for="country">Adobe Premiere</label>
+                        </div>
+                        <select id="ap" name="ap">
+                            <option value="noneed">Do not need</option>
+                            <option value="mp">Minimum performance</option>
+                            <option value="rp">Recommended performance</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="middle" style="background-color:#bbb;">
+                    <div align="center">
+                        <div>
+                            <label for="fname">CS:GO</label>
+                        </div>
+                        <select id="CS:GO" name="CS:GO">
+                            <option value="noneed">Do not need</option>
+                            <option value="hg2160">High graphics, 2160p</option>
+                            <option value="hg1080">High graphics, 1080p</option>
+                            <option value="lg2160">Low graphics, 2160p</option>
+                            <option value="lg1080">Low graphics, 1080p</option>
+                        </select>
+                    </div>
+                    <div align="center">
+                        <div>
+                            <label for="lname">Battlefield 5</label>
+                        </div>
+                        <select id="Battlefield 5" name="Battlefield 5">
+                            <option value="noneed">Do not need</option>
+                            <option value="hg2160">High graphics, 2160p</option>
+                            <option value="hg1080">High graphics, 1080p</option>
+                            <option value="lg2160">Low graphics, 2160p</option>
+                            <option value="lg1080">Low graphics, 1080p</option>
+                        </select>
+                    </div>
+                    <div align="center">
+                        <div>
+                            <label for="country">Witcher 3</label>
+                        </div>
+                        <select id="Witcher 3" name="Witcher 3">
+                            <option value="noneed">Do not need</option>
+                            <option value="hg2160">High graphics, 2160p</option>
+                            <option value="hg1080">High graphics, 1080p</option>
+                            <option value="lg2160">Low graphics, 2160p</option>
+                            <option value="lg1080">Low graphics, 1080p</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="right" style="background-color:#ccc;">
+                    <div align="center">
+                        <div>
+                            <label for="fname">Fortnite</label>
+                        </div>
+                        <select id="Fortnite" name="Fortnite">
+                            <option value="noneed">Do not need</option>
+                            <option value="hg2160">High graphics, 2160p</option>
+                            <option value="hg1080">High graphics, 1080p</option>
+                            <option value="lg2160">Low graphics, 2160p</option>
+                            <option value="lg1080">Low graphics, 1080p</option>
+                        </select>
+                    </div>
+                    <div align="center">
+                        <div>
+                            <label for="lname">PUBG</label>
+                        </div>
+                        <select id="PUBG" name="PUBG">
+                            <option value="noneed">Do not need</option>
+                            <option value="hg2160">High graphics, 2160p</option>
+                            <option value="hg1080">High graphics, 1080p</option>
+                            <option value="lg2160">Low graphics, 2160p</option>
+                            <option value="lg1080">Low graphics, 1080p</option>
+                        </select>
+                    </div>
+                    <div align="center">
+                        <div>
+                            <label for="country">Dota 2</label>
+                        </div>
+                        <select id="Dota 2" name="Dota 2">
+                            <option value="noneed">Do not need</option>
+                            <option value="hg2160">High graphics, 2160p</option>
+                            <option value="hg1080">High graphics, 1080p</option>
+                            <option value="lg2160">Low graphics, 2160p</option>
+                            <option value="lg1080">Low graphics, 1080p</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div align="center">
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </form>
 </body>
 </html>

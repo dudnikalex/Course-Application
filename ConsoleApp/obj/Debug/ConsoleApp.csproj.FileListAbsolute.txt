@@ -4,3 +4,10 @@ C:\Users\Max\source\repos\Course\CourseApp\ConsoleApp\bin\Debug\ConsoleApp.pdb
 C:\Users\Max\source\repos\Course\CourseApp\ConsoleApp\obj\Debug\ConsoleApp.csprojAssemblyReference.cache
 C:\Users\Max\source\repos\Course\CourseApp\ConsoleApp\obj\Debug\ConsoleApp.exe
 C:\Users\Max\source\repos\Course\CourseApp\ConsoleApp\obj\Debug\ConsoleApp.pdb
+C:\Users\Max\Documents\GitHub\Course-Application\ConsoleApp\bin\Debug\ConsoleApp.exe.config
+C:\Users\Max\Documents\GitHub\Course-Application\ConsoleApp\bin\Debug\ConsoleApp.exe
+C:\Users\Max\Documents\GitHub\Course-Application\ConsoleApp\bin\Debug\ConsoleApp.pdb
+C:\Users\Max\Documents\GitHub\Course-Application\ConsoleApp\obj\Debug\ConsoleApp.csprojAssemblyReference.cache
+C:\Users\Max\Documents\GitHub\Course-Application\ConsoleApp\obj\Debug\ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Max\Documents\GitHub\Course-Application\ConsoleApp\obj\Debug\ConsoleApp.exe
+C:\Users\Max\Documents\GitHub\Course-Application\ConsoleApp\obj\Debug\ConsoleApp.pdb

@@ -14,8 +14,9 @@ namespace WebApp
     {
         protected void Application_Start()
         {
-            Database.SetInitializer(new CreateDatabaseIfNotExists<BuildContext>());
+            Database.SetInitializer(new DropCreateDatabaseAlways<BuildContext>());
             Database.SetInitializer(new CreateDatabaseIfNotExists<GameContext>());
+            
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
