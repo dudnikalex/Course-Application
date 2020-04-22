@@ -18,39 +18,6 @@ namespace WebApp.Controllers
 
         public ActionResult Index()
         {
-            games.Games.Add(new Game { name = "Witcher 3", set = "lg1080", cpu_rate = 40, gpu_rate = 21, ram_rate = 8, hdd_rate = 1, ssd_rate = 1 });
-            games.SaveChanges();
-            List<Hashtable> q = BenchParser.Parse(@"C:\Users\Max\Documents\GitHub\Course-Application\UserbenchmarkParser\Files\cpu");
-            foreach(var part in q)
-            {
-                Build b = new Build( (string)part["company"], "cpu", (string)part["model"], Convert.ToSingle(part["bench"]) );
-                builds.Builds.Add(b);
-            }
-            List<Hashtable> q1 = BenchParser.Parse(@"C:\Users\Max\Documents\GitHub\Course-Application\UserbenchmarkParser\Files\gpu");
-            foreach (var part in q1)
-            {
-                Build b = new Build((string)part["company"], "gpu", (string)part["model"], Convert.ToSingle(part["bench"]));
-                builds.Builds.Add(b);
-            }
-            List<Hashtable> q2 = BenchParser.Parse(@"C:\Users\Max\Documents\GitHub\Course-Application\UserbenchmarkParser\Files\hdd");
-            foreach (var part in q2)
-            {
-                Build b = new Build((string)part["company"], "hdd", (string)part["model"], Convert.ToSingle(part["bench"]));
-                builds.Builds.Add(b);
-            }
-            List<Hashtable> q3 = BenchParser.Parse(@"C:\Users\Max\Documents\GitHub\Course-Application\UserbenchmarkParser\Files\ram");
-            foreach (var part in q3)
-            {
-                Build b = new Build((string)part["company"], "ram", (string)part["model"], Convert.ToSingle(part["bench"]));
-                builds.Builds.Add(b);
-            }
-            List<Hashtable> q4 = BenchParser.Parse(@"C:\Users\Max\Documents\GitHub\Course-Application\UserbenchmarkParser\Files\ssd");
-            foreach (var part in q4)
-            {
-                Build b = new Build((string)part["company"], "ssd", (string)part["model"], Convert.ToSingle(part["bench"]));
-                builds.Builds.Add(b);
-            }
-            builds.SaveChanges();
             return View();
         }
 
@@ -77,7 +44,7 @@ namespace WebApp.Controllers
             float min_needed_rate = 1000;
             foreach(var part in q)
             {
-                if(part.Company == type && part.Rating >= needed_rate && part.Rating < min_needed_rate)
+                if(part.Type == type && part.Rating >= needed_rate && part.Rating < min_needed_rate)
                 {
                     min_needed_rate = part.Rating;
                     val = part;
@@ -88,28 +55,35 @@ namespace WebApp.Controllers
 
         public ActionResult About()
         {
-            Hashtable ht = new Hashtable();
+            List<Build> cpus = new List<Build>(), 
+                        gpus = new List<Build>(), 
+                        rams = new List<Build>(), 
+                        ssds = new List<Build>(), 
+                        hdds = new List<Build>();
+
             foreach(var app in list_of_games)
             {
-                ht.Add(app, Request.Form[app]);
+                string gamename = app;
+                Game game = InfoAboutGame(gamename, (string)Request.Form[gamename]);
+                cpus.Add(Find_part("cpu", game.cpu_rate));
+                gpus.Add(Find_part("gpu", game.gpu_rate));
+                rams.Add(Find_part("ram", game.ram_rate));
+                hdds.Add(Find_part("hdd", game.hdd_rate));
+                ssds.Add(Find_part("ssd", game.ssd_rate));
             }
+            cpus.Sort();
+            gpus.Sort();
+            rams.Sort();
+            hdds.Sort();
+            ssds.Sort();
 
+            ViewBag.Cpu = cpus.Last().ToString();
+            ViewBag.Gpu = gpus.Last().ToString();
+            ViewBag.Ram = rams.Last().ToString();
+            ViewBag.Hdd = hdds.Last().ToString();
+            ViewBag.Ssd = ssds.Last().ToString();
+            ViewBag.Total = "Total" + Convert.ToString(gpus.Last().Price + cpus.Last().Price + rams.Last().Price + ssds.Last().Price + hdds.Last().Price);
 
-
-            string gamename = "Witcher 3";
-            Game game = InfoAboutGame(gamename, (string)ht[gamename]);
-            Build needed0 = Find_part("cpu", game.cpu_rate);
-            Build needed1 = Find_part("gpu", game.gpu_rate);
-            Build needed2 = Find_part("ram", game.ram_rate);
-            Build needed3 = Find_part("hdd", game.hdd_rate);
-            Build needed4 = Find_part("ssd", game.ssd_rate);
-            ViewBag.Cpu = needed0.ToString();
-            ViewBag.Gpu = needed1.ToString();
-            ViewBag.Ram = needed2.ToString();
-            ViewBag.Hdd = needed3.ToString();
-            ViewBag.Ssd = needed4.ToString();
-            ViewBag.Total = "Total" + Convert.ToString(needed2.Price + needed1.Price + needed0.Price + needed3.Price + needed4.Price);
-            
             return View();
         }
 

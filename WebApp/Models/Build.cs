@@ -5,7 +5,7 @@ using System.Web;
 
 namespace WebApp.Models
 {
-    public class Build
+    public class Build : IComparable<Build>
     {
         public int Id { get; set; }
         public string Company { get; set; }
@@ -28,7 +28,19 @@ namespace WebApp.Models
 
         public override string ToString()
         {
-            return $"{Company} + {ModelName} + {Price}" + Environment.NewLine;
+            return $"{Type}: {Company} {ModelName} - {Price}" + Environment.NewLine;
+        }
+
+        public int CompareTo(Build other)
+        {
+            if(Rating < other.Rating)
+            {
+                return -1;
+            } 
+            else
+            {
+                return 1;
+            }
         }
     }
 }

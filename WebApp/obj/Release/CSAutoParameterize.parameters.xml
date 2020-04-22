@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="BuildContext-Web.config Connection String" description="BuildContext Строка подключения в web.config, используемая приложением для доступа к базе данных." defaultValue="Server=tcp:almostred.database.windows.net,1433;Initial Catalog=database1;Persist Security Info=False;User ID=almostred;Password=186csj5QW;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=5;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Max\\Documents\\GitHub\\Course-Application\\WebApp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BuildContext']/@connectionString" />
+  </parameter>
+  <parameter name="GameContext-Web.config Connection String" description="GameContext Строка подключения в web.config, используемая приложением для доступа к базе данных." defaultValue="Server=tcp:almostred.database.windows.net,1433;Initial Catalog=database1;Persist Security Info=False;User ID=almostred;Password=186csj5QW;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=5;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Max\\Documents\\GitHub\\Course-Application\\WebApp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='GameContext']/@connectionString" />
+  </parameter>
+</parameters>
