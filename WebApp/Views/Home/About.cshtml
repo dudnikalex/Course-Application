@@ -1,11 +1,62 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Cpu</h3>
-<h3>@ViewBag.Gpu</h3>
-<h3>@ViewBag.Ram</h3>
-<h3>@ViewBag.Ssd</h3>
-<h3>@ViewBag.Hdd</h3>
-<h2>@ViewBag.Total</h2>
 
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="~/fonts/styles.css">
+    </head>
+    <body>
+
+        <h1> Here is your PC build! </h1>
+        <table class="bordered">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Model</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>CPU</td>
+                <td><a href="@ViewBag.Cpu_link">@ViewBag.Cpu</a></td>
+                <td>@ViewBag.Cpu_price</td>
+            </tr>
+            <tr>
+                <td>GPU</td>
+                <td>@ViewBag.Gpu</td>
+                <td>@ViewBag.Gpu_price</td>
+            </tr>
+            <tr>
+                <td>Motherboard</td>
+                <td>@ViewBag.MB</td>
+                <td>@ViewBag.MB_price</td>
+            </tr>
+            <tr>
+                <td>RAM</td>
+                <td>@ViewBag.Ram</td>
+                <td>@ViewBag.Ram_price</td>
+            </tr>
+            <tr>
+                <td>SSD</td>
+                <td>@ViewBag.Ssd</td>
+                <td>@ViewBag.Ssd_price</td>
+            </tr>
+            <tr>
+                <td>HDD</td>
+                <td>@ViewBag.Hdd</td>
+                <td>@ViewBag.Hdd_price</td>
+            </tr>
+            <tr>
+                <td>Case</td>
+                <td><a href="@ViewBag.Case_link">@ViewBag.Case</a></td>
+                <td>@ViewBag.Case_price</td>
+            </tr>
+            <tr>
+                <td>@ViewBag.Total</td>
+            </tr>
+        </table>
+    </body>
+
+
+</html>

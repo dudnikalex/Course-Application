@@ -28,7 +28,7 @@ namespace WebApp.Models
 
         public override string ToString()
         {
-            return $"{Type}: {Company} {ModelName} - {Price}" + Environment.NewLine;
+            return $"{Company} {ModelName}";
         }
 
         public int CompareTo(Build other)
