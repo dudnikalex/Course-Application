@@ -7,55 +7,100 @@
         <link rel="stylesheet" type="text/css" href="~/fonts/styles.css">
     </head>
     <body>
+        <div class="class2">
 
-        <h1> Here is your PC build! </h1>
-        <table class="bordered">
-            <thead>
+            <h3> Here is your PC build with now available parts </h3>
+            <table class="bordered">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Model</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
                 <tr>
-                    <th>Type</th>
-                    <th>Model</th>
-                    <th>Price</th>
+                    <td>CPU</td>
+                    <td><a href="@ViewBag.Cpu_link">@ViewBag.Cpu</a></td>
+                    <td>@ViewBag.Cpu_price</td>
                 </tr>
-            </thead>
-            <tr>
-                <td>CPU</td>
-                <td><a href="@ViewBag.Cpu_link">@ViewBag.Cpu</a></td>
-                <td>@ViewBag.Cpu_price</td>
-            </tr>
-            <tr>
-                <td>GPU</td>
-                <td>@ViewBag.Gpu</td>
-                <td>@ViewBag.Gpu_price</td>
-            </tr>
-            <tr>
-                <td>Motherboard</td>
-                <td>@ViewBag.MB</td>
-                <td>@ViewBag.MB_price</td>
-            </tr>
-            <tr>
-                <td>RAM</td>
-                <td>@ViewBag.Ram</td>
-                <td>@ViewBag.Ram_price</td>
-            </tr>
-            <tr>
-                <td>SSD</td>
-                <td>@ViewBag.Ssd</td>
-                <td>@ViewBag.Ssd_price</td>
-            </tr>
-            <tr>
-                <td>HDD</td>
-                <td>@ViewBag.Hdd</td>
-                <td>@ViewBag.Hdd_price</td>
-            </tr>
-            <tr>
-                <td>Case</td>
-                <td><a href="@ViewBag.Case_link">@ViewBag.Case</a></td>
-                <td>@ViewBag.Case_price</td>
-            </tr>
-            <tr>
-                <td>@ViewBag.Total</td>
-            </tr>
-        </table>
+                <tr>
+                    <td>GPU</td>
+                    <td><a href="@ViewBag.GPU_link">@ViewBag.Gpu</td>
+                    <td>@ViewBag.Gpu_price</td>
+                </tr>
+                <tr>
+                    <td>Motherboard</td>
+                    <td><a href="@ViewBag.MB_link">@ViewBag.MB</td>
+                    <td>@ViewBag.MB_price</td>
+                </tr>
+                <tr>
+                    <td>RAM</td>
+                    <td><a href="@ViewBag.Ram">@ViewBag.Ram</td>
+                    <td>@ViewBag.Ram_price</td>
+                </tr>
+                <tr>
+                    <td>SSD</td>
+                    <td><a href="@ViewBag.Ssd_link">@ViewBag.Ssd</td>
+                    <td>@ViewBag.Ssd_price</td>
+                </tr>
+                <tr>
+                    <td>HDD</td>
+                    <td><a href="@ViewBag.Hdd_link">@ViewBag.Hdd</td>
+                    <td>@ViewBag.Hdd_price</td>
+                </tr>
+                <tr>
+                    <td>Case</td>
+                    <td><a href="@ViewBag.Case_link">@ViewBag.Case</a></td>
+                    <td>@ViewBag.Case_price</td>
+                </tr>
+                <tr>
+                    <td>@ViewBag.Total</td>
+                </tr>
+            </table>
+
+            <h3> Here is your PC build with not only available parts (without prices, only statistics)</h3>
+            <h4> Testing Mode </h4>
+            <table class="bordered">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Model</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>CPU</td>
+                    <td>@ViewBag.Cpu_test</a></td>
+
+                </tr>
+                <tr>
+                    <td>GPU</td>
+                    <td>@ViewBag.Gpu_test</a></td>
+
+                </tr>
+                <tr>
+                    <td>Motherboard</td>
+                    <td>@ViewBag.MB_test</a></td>
+
+                </tr>
+                <tr>
+                    <td>RAM</td>
+                    <td>@ViewBag.Ram_test</a></td>
+
+                </tr>
+                <tr>
+                    <td>SSD</td>
+                    <td>@ViewBag.Ssd_test</a></td>
+
+                </tr>
+                <tr>
+                    <td>HDD</td>
+                    <td>@ViewBag.Hdd_test</a></td>
+
+                </tr>
+
+
+            </table>
+        </div>
     </body>
 
 

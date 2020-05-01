@@ -1,0 +1,7 @@
+C:\Users\Max\Documents\GitHub\Course-Application\XMLParser\bin\Debug\XMLParser.exe.config
+C:\Users\Max\Documents\GitHub\Course-Application\XMLParser\bin\Debug\XMLParser.exe
+C:\Users\Max\Documents\GitHub\Course-Application\XMLParser\bin\Debug\XMLParser.pdb
+C:\Users\Max\Documents\GitHub\Course-Application\XMLParser\obj\Debug\XMLParser.csprojAssemblyReference.cache
+C:\Users\Max\Documents\GitHub\Course-Application\XMLParser\obj\Debug\XMLParser.csproj.CoreCompileInputs.cache
+C:\Users\Max\Documents\GitHub\Course-Application\XMLParser\obj\Debug\XMLParser.exe
+C:\Users\Max\Documents\GitHub\Course-Application\XMLParser\obj\Debug\XMLParser.pdb

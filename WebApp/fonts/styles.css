@@ -105,10 +105,19 @@ input[type=submit] {
 }
 
 .arrow {
+    margin-top: 100px;
     text-align: center;
     height: 500px;
     width: 100%;
     position: center;
+}
+
+.class2 {
+    background-color: ghostwhite;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 7px;
+    padding-bottom: 50px;
 }
 
 .fa-arrow-alt-circle-down {
@@ -215,7 +224,7 @@ input[type=submit] {
 
 .ask {
     width: 45%;
-    height: 70%;
+    height: 100%;
     margin-left: 70%;
     margin-right: 0%;
     text-align: left;

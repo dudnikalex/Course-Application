@@ -34,50 +34,52 @@
 
 </head>
 <body onload="onLoad()">
-    
-    <div class="textbox">
-        <h1>Hello</h1>
-        <h4>Here you can build your PC</h4>
-        <div class="ask">
-            <h4>
-                Before we can start building your PC, </br>
-                please ask some questions about form-factor and </br>
-                your preferences about manufacturer
-            </h4>
-            </br>
-            <div>
-                <label for="lname">Form-factor</label>
-            </div>
-            <select class="ask-select" id="ff" name="ff">
-                <option value="nomatter">Doesn't matter</option>
-                <option value="atx">ATX</option>
-                <option value="itx">MiniITX</option>
-                <option value="mATX">MATX</option>
-            </select>
-            <div>
-                <label for="lname">CPU Manufacturer</label>
-            </div>
-            <select class="ask-select" id="mancpu" name="mancpu">
-                <option value="nomatter">Doesn't matter</option>
-                <option value="amd">AMD</option>
-                <option value="intel">Intel</option>
-            </select>
-            <div>
-                <label for="lname">GPU Manufacturer</label>
-            </div>
-            <select class="ask-select" id="mangpu" name="mangpu">
-                <option value="nomatter">Doesn't matter</option>
-                <option value="amd">AMD</option>
-                <option value="nvidia">NVIDIA</option>
-            </select>
-        </div>
-    </div>
-
-    <div class="arrow">
-        <button type="button" class="btn">Go to selector    </button>
-    </div>
-    
     <form action="/Home/About" method="post">
+        <div class="textbox">
+            <h1>Welcome to Pluto</h1>
+            <h4>Here you can build your PC 
+            </br>according to what you need</h4>
+            <div class="ask">
+                <h3>We also need to ask...</h3>
+                <h4>
+                    Before we can start building your PC, </br>
+                    please answer some questions about form-factor and </br>
+                    your preferences about manufacturer
+                </h4>
+                </br>
+                <div>
+                    <label for="lname">Form-factor</label>
+                </div>
+                <select class="ask-select" id="ff" name="ff">
+                    <option value="nomatter">Doesn't matter</option>
+                    <option value="atx">ATX</option>
+                    <option value="itx">MiniITX</option>
+                    <option value="mATX">MATX</option>
+                </select>
+                <div>
+                    <label for="lname">CPU Manufacturer</label>
+                </div>
+                <select class="ask-select" id="mancpu" name="mancpu">
+                    <option value="nomatter">Doesn't matter</option>
+                    <option value="amd">AMD</option>
+                    <option value="intel">Intel</option>
+                </select>
+                <div>
+                    <label for="lname">GPU Manufacturer</label>
+                </div>
+                <select class="ask-select" id="mangpu" name="mangpu">
+                    <option value="nomatter">Doesn't matter</option>
+                    <option value="amd">AMD</option>
+                    <option value="nvidia">NVIDIA</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="arrow">
+            <button type="button" class="btn">Go to selector    </button>
+        </div>
+
+
         <div id="here" class="claas1">
             <div class="grid-container">
                 <div class="header">

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UploaderTest", "UploaderTest\UploaderTest.csproj", "{BC5AEFE4-B081-400F-9902-906712BD5702}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLParser", "XMLParser\XMLParser.csproj", "{F5A47CAD-5BDB-4EF1-A106-F635294F904F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{BC5AEFE4-B081-400F-9902-906712BD5702}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC5AEFE4-B081-400F-9902-906712BD5702}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC5AEFE4-B081-400F-9902-906712BD5702}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5A47CAD-5BDB-4EF1-A106-F635294F904F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5A47CAD-5BDB-4EF1-A106-F635294F904F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5A47CAD-5BDB-4EF1-A106-F635294F904F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5A47CAD-5BDB-4EF1-A106-F635294F904F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
