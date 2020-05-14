@@ -85,16 +85,59 @@ namespace WebApp.Controllers
 
         public Build Find_part(string type, Single needed_rate, string pref)
         {
-            if(pref == "nomatter" || pref == null)
+           
+            IEnumerable<Build> q = builds.Builds;
+            var z = q.Last();
+            Build val = new Build();
+            float min_needed_rate = 1000;
+            foreach (var part in q)
             {
-                pref = "amd";
+                var comp = part.Company.ToLower();
+                if (pref == "nomatter")
+                {
+                    comp = "nomatter";
+                }
+                if (comp == pref.ToLower() && part.Type == type && part.Rating >= needed_rate && part.Rating < min_needed_rate && part.Price > 0)
+                {
+                    if (type == "cpu" || type == "gpu")
+                    {
+                        bool flag = false;
+                        if (part.ModelName.Contains("Xeon") || part.ModelName.Contains("Quadro") || part.ModelName.Contains("FirePro"))
+                        {
+                            continue;
+                        }
+                        foreach (var ch in part.ModelName)
+                        {
+                            if (ch == 'U' || ch == 'M' || ch == 'G' || ch == 'm')
+                            {
+                                flag = true;
+                            }
+                        }
+                        if (flag == false)
+                        {
+                            min_needed_rate = part.Rating;
+                            val = part;
+                        }
+                    }
+                    else
+                    {
+                        min_needed_rate = part.Rating;
+                        val = part;
+                    }
+                }
             }
+            return val;
+        }
+
+        public Build Find_part_t(string type, Single needed_rate)
+        {
+            
             IEnumerable<Build> q = builds.Builds;
             Build val = new Build();
             float min_needed_rate = 1000;
             foreach (var part in q)
             {
-                if (part.Company.ToLower() == pref.ToLower() && part.Type == type && part.Rating >= needed_rate && part.Rating < min_needed_rate && part.Price > 0)
+                if ( part.Type == type && part.Rating >= needed_rate && part.Rating < min_needed_rate)
                 {
                     if (type == "cpu" || type == "gpu")
                     {
@@ -156,7 +199,7 @@ namespace WebApp.Controllers
                     ViewBag.MB_price = 7980;
                 }
             }
-            else if(cpu.ModelName[6] > '7' || cpu.ModelName[6] == '1')
+            else if(cpu.ModelName[8] > '7' || cpu.ModelName[8] == '1')
             {
                 if (Request.Form["ff"] == "atx")
                 {
@@ -183,7 +226,7 @@ namespace WebApp.Controllers
                     ViewBag.MB_price = 7240;
                 }
             }
-            else if(cpu.ModelName[6] > '5')
+            else if(cpu.ModelName[8] > '5')
             {
                 if (Request.Form["ff"] == "atx")
                 {
@@ -203,7 +246,7 @@ namespace WebApp.Controllers
                     ViewBag.MB_link = "https://www.citilink.ru/catalog/computers_and_notebooks/parts/motherboards/372483/";
                     ViewBag.MB_price = 5340;
                 }
-                if (Request.Form["ff"] == "atx")
+                else
                 {
                     ViewBag.MB = "Gigabyte GA-H110-D3A";
                     ViewBag.MB_link = "https://www.citilink.ru/catalog/computers_and_notebooks/parts/motherboards/1086697/";
@@ -256,8 +299,41 @@ namespace WebApp.Controllers
                                                                Convert.ToInt32(ViewBag.Case_price));
         }
 
+        public void Choose_cpu_and_gpu_test()
+        {
+            List<Build> cpus = new List<Build>(),
+            gpus = new List<Build>();
+
+            foreach (var app in list_of_games)
+            {
+                string gamename = app;
+                Game game = InfoAboutGame(gamename, (string)Request.Form[gamename]);
+                cpus.Add(Find_part_t("cpu", game.cpu_rate));
+                gpus.Add(Find_part_t("gpu", game.gpu_rate));
+            }
+
+            cpus.Sort();
+            gpus.Sort();
+            ViewBag.Cpu_t = cpus.Last().ToString();
+           
+            ViewBag.Gpu_t = gpus.Last().ToString();
+
+        }
+
         public ActionResult About()
         {
+            bool flag = false;
+            foreach(var part in list_of_games)
+            {
+                if(Request.Form[part] != "noneed")
+                {
+                    flag = true;
+                }
+            }
+            if(flag == false)
+            {
+                return RedirectPermanent("/Home/Index");
+            }
             Choose_case();
             Choose_cpu_and_gpu();
             Choose_hdd();
@@ -266,6 +342,13 @@ namespace WebApp.Controllers
             Choose_ram();
             Count_price();
 
+            Choose_cpu_and_gpu_test();
+
+            return View();
+        }
+
+        public ActionResult Office()
+        {
             return View();
         }
 

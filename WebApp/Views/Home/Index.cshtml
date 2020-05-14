@@ -6,7 +6,7 @@
 
     <script>
         function onLoad() {
-            var btn = document.querySelector('.btn');
+            var btn = document.getElementById("selectorbtn");
 
             btn.addEventListener('click', function () {
                 document.getElementById("here").scrollIntoView({ block: "center", behavior: "smooth" });
@@ -26,7 +26,6 @@
             }
             if (flag == false) {
                 alert("You need to choose at least one app to continue.");
-
             }
             
         }
@@ -36,49 +35,59 @@
 <body onload="onLoad()">
     <form action="/Home/About" method="post">
         <div class="textbox">
-            <h1>Welcome to Pluto</h1>
-            <h4>Here you can build your PC 
-            </br>according to what you need</h4>
-            <div class="ask">
-                <h3>We also need to ask...</h3>
-                <h4>
-                    Before we can start building your PC, </br>
-                    please answer some questions about form-factor and </br>
-                    your preferences about manufacturer
-                </h4>
-                </br>
-                <div>
-                    <label for="lname">Form-factor</label>
-                </div>
-                <select class="ask-select" id="ff" name="ff">
-                    <option value="nomatter">Doesn't matter</option>
-                    <option value="atx">ATX</option>
-                    <option value="itx">MiniITX</option>
-                    <option value="mATX">MATX</option>
-                </select>
-                <div>
-                    <label for="lname">CPU Manufacturer</label>
-                </div>
-                <select class="ask-select" id="mancpu" name="mancpu">
-                    <option value="nomatter">Doesn't matter</option>
-                    <option value="amd">AMD</option>
-                    <option value="intel">Intel</option>
-                </select>
-                <div>
-                    <label for="lname">GPU Manufacturer</label>
-                </div>
-                <select class="ask-select" id="mangpu" name="mangpu">
-                    <option value="nomatter">Doesn't matter</option>
-                    <option value="amd">AMD</option>
-                    <option value="nvidia">NVIDIA</option>
-                </select>
-            </div>
-        </div>
+            <h1>WELCOME TO PLUTO</h1>
+            <h4>
+                Here you can build your PC
+                </br>according to what you need
+            </h4>
 
-        <div class="arrow">
-            <button type="button" class="btn">Go to selector    </button>
+            <div class="containerask">
+                <div class="left-half">
+                    <h3>If you need an office PC </br> and work with Microsoft Office </br> or just surf the internet</h3>
+                    <div>
+                        <a href="/Home/Office" type="button" class="btn btn-white btn-animate">Click here</a>
+                    </div>
+                </div>
+                <div class="right-half">
+                    <h3>If you have other preferences</h3>
+                    <h4>
+                        Before we can start building your PC, </br>
+                        please answer some questions about form-factor and </br>
+                        your preferences about manufacturer
+                    </h4>
+                    </br>
+                    <div>
+                        <label for="lname">Form-factor</label>
+                    </div>
+                    <select class="ask-select" id="ff" name="ff">
+                        <option value="nomatter">Doesn't matter</option>
+                        <option value="atx">ATX</option>
+                        <option value="itx">MiniITX</option>
+                        <option value="mATX">MATX</option>
+                    </select>
+                    <div>
+                        <label for="lname">CPU Manufacturer</label>
+                    </div>
+                    <select class="ask-select" id="mancpu" name="mancpu">
+                        <option value="nomatter">Doesn't matter</option>
+                        <option value="amd">AMD</option>
+                        <option value="intel">Intel</option>
+                    </select>
+                    <div>
+                        <label for="lname">GPU Manufacturer</label>
+                    </div>
+                    <select class="ask-select" id="mangpu" name="mangpu">
+                        <option value="nomatter">Doesn't matter</option>
+                        <option value="amd">AMD</option>
+                        <option value="nvidia">NVIDIA</option>
+                    </select>
+                    <div></div>
+                    <div>
+                        <a href="#" type="button" onclick="return false" id="selectorbtn" class="btn btn-white btn-animate">Go to selector</a>
+                    </div>
+                </div>
         </div>
-
+        </div>
 
         <div id="here" class="claas1">
             <div class="grid-container">

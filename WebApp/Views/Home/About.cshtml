@@ -9,7 +9,7 @@
     <body>
         <div class="class2">
 
-            <h3> Here is your PC build with now available parts </h3>
+            <h3 style="text-align:center;"> Here is your PC build with now available parts </h3>
             <table class="bordered">
                 <thead>
                     <tr>
@@ -57,7 +57,9 @@
                     <td>@ViewBag.Total</td>
                 </tr>
             </table>
-
+        </div>
+        <div></div>>
+        <div class="class2">
             <h3> Here is your PC build with not only available parts (without prices, only statistics)</h3>
             <h4> Testing Mode </h4>
             <table class="bordered">
@@ -69,36 +71,14 @@
                 </thead>
                 <tr>
                     <td>CPU</td>
-                    <td>@ViewBag.Cpu_test</a></td>
+                    <td>@ViewBag.Cpu_t</a></td>
 
                 </tr>
                 <tr>
                     <td>GPU</td>
-                    <td>@ViewBag.Gpu_test</a></td>
+                    <td>@ViewBag.Gpu_t</a></td>
 
                 </tr>
-                <tr>
-                    <td>Motherboard</td>
-                    <td>@ViewBag.MB_test</a></td>
-
-                </tr>
-                <tr>
-                    <td>RAM</td>
-                    <td>@ViewBag.Ram_test</a></td>
-
-                </tr>
-                <tr>
-                    <td>SSD</td>
-                    <td>@ViewBag.Ssd_test</a></td>
-
-                </tr>
-                <tr>
-                    <td>HDD</td>
-                    <td>@ViewBag.Hdd_test</a></td>
-
-                </tr>
-
-
             </table>
         </div>
     </body>

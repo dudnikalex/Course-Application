@@ -35,10 +35,22 @@ namespace UploaderTest.Controllers
             games.Games.Add(new Game { name = "ps", set = "rp", cpu_rate = 64, gpu_rate = 62, ram_rate = 8, hdd_rate = 1, ssd_rate = 1 });
             games.Games.Add(new Game { name = "ap", set = "mp", cpu_rate = 56, gpu_rate = 24, ram_rate = 8, hdd_rate = 1, ssd_rate = 1 });
             games.Games.Add(new Game { name = "ap", set = "rp", cpu_rate = 59, gpu_rate = 40, ram_rate = 8, hdd_rate = 1, ssd_rate = 1 });
-            games.Games.Add(new Game { name = "CS:GO", set = "lg1080", cpu_rate = 34, gpu_rate = 15, ram_rate = 4, hdd_rate = 1, ssd_rate = 1 });
-            games.Games.Add(new Game { name = "CS:GO", set = "hg1080", cpu_rate = 42, gpu_rate = 42, ram_rate = 8, hdd_rate = 1, ssd_rate = 1 });
-            games.Games.Add(new Game { name = "CS:GO", set = "hg2160", cpu_rate = 42, gpu_rate = 60, ram_rate = 8, hdd_rate = 1, ssd_rate = 1 });
-            games.Games.Add(new Game { name = "CS:GO", set = "lg2160", cpu_rate = 45, gpu_rate = 42, ram_rate = 8, hdd_rate = 1, ssd_rate = 1 });
+            games.Games.Add(new Game { name = "WOW", set = "lg1080", cpu_rate = 44, gpu_rate = 14, ram_rate = 4, hdd_rate = 1, ssd_rate = 1 });
+            games.Games.Add(new Game { name = "WOW", set = "hg1080", cpu_rate = 62, gpu_rate = 40, ram_rate = 8, hdd_rate = 1, ssd_rate = 1 });
+            games.Games.Add(new Game { name = "WOW", set = "hg2160", cpu_rate = 72, gpu_rate = 60, ram_rate = 8, hdd_rate = 1, ssd_rate = 1 });
+            games.Games.Add(new Game { name = "WOW", set = "lg2160", cpu_rate = 62, gpu_rate = 40, ram_rate = 8, hdd_rate = 1, ssd_rate = 1 });
+            games.Games.Add(new Game { name = "Fortnite", set = "lg1080", cpu_rate = 44, gpu_rate = 14, ram_rate = 4, hdd_rate = 1, ssd_rate = 1 });
+            games.Games.Add(new Game { name = "Fortnite", set = "hg1080", cpu_rate = 62, gpu_rate = 40, ram_rate = 8, hdd_rate = 1, ssd_rate = 1 });
+            games.Games.Add(new Game { name = "Fortnite", set = "hg2160", cpu_rate = 72, gpu_rate = 60, ram_rate = 8, hdd_rate = 1, ssd_rate = 1 });
+            games.Games.Add(new Game { name = "Fortnite", set = "lg2160", cpu_rate = 62, gpu_rate = 40, ram_rate = 8, hdd_rate = 1, ssd_rate = 1 });
+            games.Games.Add(new Game { name = "PUBG", set = "lg1080", cpu_rate = 44, gpu_rate = 40, ram_rate = 4, hdd_rate = 1, ssd_rate = 1 });
+            games.Games.Add(new Game { name = "PUBG", set = "hg1080", cpu_rate = 62, gpu_rate = 50, ram_rate = 8, hdd_rate = 1, ssd_rate = 1 });
+            games.Games.Add(new Game { name = "PUBG", set = "hg2160", cpu_rate = 72, gpu_rate = 70, ram_rate = 8, hdd_rate = 1, ssd_rate = 1 });
+            games.Games.Add(new Game { name = "PUBG", set = "lg2160", cpu_rate = 62, gpu_rate = 50, ram_rate = 8, hdd_rate = 1, ssd_rate = 1 });
+            games.Games.Add(new Game { name = "Dota 2", set = "lg1080", cpu_rate = 34, gpu_rate = 14, ram_rate = 4, hdd_rate = 1, ssd_rate = 1 });
+            games.Games.Add(new Game { name = "Dota 2", set = "hg1080", cpu_rate = 42, gpu_rate = 24, ram_rate = 8, hdd_rate = 1, ssd_rate = 1 });
+            games.Games.Add(new Game { name = "Dota 2", set = "hg2160", cpu_rate = 42, gpu_rate = 40, ram_rate = 8, hdd_rate = 1, ssd_rate = 1 });
+            games.Games.Add(new Game { name = "Dota 2", set = "lg2160", cpu_rate = 45, gpu_rate = 24, ram_rate = 8, hdd_rate = 1, ssd_rate = 1 });
 
 
             games.SaveChanges();
